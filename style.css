@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500;600;700&family=Englebert&family=Redressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Englebert", cursive;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: whitesmoke;
+  background-color: #d6d2d2;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: space-around;
+  min-width: 460px;
+  padding: 20px 20px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
+    0 4px 6px -4px rgba(33, 150, 243, 0.4);
+  border-radius: 10px;
+  background-color: #6b6ecc;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+}
+
+@media (max-width: 560px) {
+  .card {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: 20px;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out 0.5s;
+  text-transform: uppercase;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search button {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.weather_img {
+  margin: 10vh 0 5vh 0;
+  width: 100px;
+  display: none;
+}
+
+.temp {
+  font-size: 70px;
+}
+
+.city_name {
+  font-size: 30px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10% 2% 5% 2%;
+  text-align: start;
+  display: none;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.col i {
+  font-size: 40px;
+}
+
+.col h2 {
+  font-size: 20x;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.col p {
+  font-size: 15px;
+  /* font-weight: 100; */
+}
+
+.error {
+  font-size: 20px;
+  margin: 20px 150px 0 0;
+  display: none;
+}
